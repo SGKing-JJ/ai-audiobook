@@ -1,14 +1,14 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Home, BookOpen, Upload, Heart } from 'lucide-react'
+import { Home, BookOpen, Upload, Settings } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const navItems = [
-  { href: '/home',      icon: Home,     label: '首頁' },
-  { href: '/library',   icon: BookOpen, label: '書架' },
-  { href: '/upload',    icon: Upload,   label: '上傳' },
-  { href: '/favorites', icon: Heart,    label: '收藏' },
+  { href: '/home',     icon: Home,     label: '首頁' },
+  { href: '/library',  icon: BookOpen, label: '書架' },
+  { href: '/upload',   icon: Upload,   label: '上傳' },
+  { href: '/settings', icon: Settings, label: '設定' },
 ]
 
 export function BottomNav() {
